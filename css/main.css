@@ -1,0 +1,620 @@
+/*==========================================================================
+                            General Designs
+==========================================================================*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background-color: #242424;
+    width: 100%;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+
+/*==========================================================================
+                            BootStrap Designs
+==========================================================================*/
+
+
+/*==========================================================================
+                                Main Designs
+==========================================================================*/
+
+
+/************************ Header Section ***********************/
+
+header .logo {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+
+/* navigator Section */
+
+header nav {
+    padding: 40px 50px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header nav .mynav-list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+    margin-top: 12px;
+}
+
+header nav .mynav-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav .mynav-list li span {
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-family: "semibold";
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav .mynav-list li:hover span {
+    color: #9ec050;
+}
+
+header nav .mynav-list .menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header nav .mynav-list .menu ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: -20px;
+    background-color: rgba(43, 45, 47, 0.5);
+    width: 300px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    display: none;
+    z-index: 999;
+}
+
+header nav .mynav-list .menu ul li {
+    margin-bottom: 20px;
+    font-family: "regular";
+    font-size: 13px;
+}
+
+header nav .mynav-list .menu ul li a {
+    transition: all 0.4s ease-in-out;
+}
+
+header nav .mynav-list .menu ul li:hover a {
+    color: #9ec050;
+}
+
+.display {
+    display: block;
+}
+
+
+/* Social Section */
+
+header nav .social-media {
+    margin-right: 40px;
+    margin-top: 12px;
+}
+
+header nav .social-media a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav .social-media a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* Search and Language Section */
+
+header nav .search-lang {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav .search-lang .socail-links {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    border: 1px solid #343434;
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav .search-lang .socail-links:last-child {
+    margin-right: 0;
+}
+
+header nav .search-lang .socail-links:hover {
+    color: #9ec050;
+}
+
+header nav .search-lang .socail-links span {
+    font-family: "arial";
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+header nav .search-lang .socail-links i {
+    padding: 0 3px;
+    margin-top: 5px;
+}
+
+header nav .search-lang .hidden-button {
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    display: none;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav .search-lang .hidden-button:hover li span {
+    background-color: #9ec050;
+}
+
+header nav .search-lang .hidden-button li span {
+    display: block;
+    width: 18px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: #fff;
+}
+
+
+/************************ Main Slider Section ***********************/
+
+.slider {
+    padding: 0px 50px;
+    margin-bottom: 140px;
+}
+
+.slider .item {
+    position: relative;
+}
+
+.slider .item .car-content {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.slider .item .car-content h2 {
+    font-family: "bold";
+    font-size: 48px;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    outline: 0;
+    margin: 0px;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    left: 0px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    right: 0px;
+}
+
+.owl-carousel .owl-nav .owl-prev i,
+.owl-carousel .owl-nav .owl-next i {
+    background-color: #2e2e2e;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+}
+
+.owl-carousel .owl-nav .owl-prev i:hover,
+.owl-carousel .owl-nav .owl-next i:hover {
+    background-color: #9ec050;
+}
+
+
+/************************ Gallary Section ***********************/
+
+.gallary {
+    margin: 0px 0px 120px;
+}
+
+.gallary .gallary-left .gallary-img {
+    margin-bottom: 20px;
+    margin-top: 75px;
+    /* set margin-bottom: 80px;in xlarge screens*/
+    /* add margin-top:100px in xlarge screens */
+}
+
+.gallary .gallary-left .gallary-img .layer-left {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 170px;
+    left: -40px;
+}
+
+.gallary .gallary-left .gallary-img img {
+    width: 220px;
+    height: 80px;
+    /* change sizes in xlarge screens */
+    background-color: #242424;
+    position: relative;
+}
+
+.gallary .gallary-left p {
+    font-family: "regular";
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    color: #909090;
+}
+
+.gallary .gallary-left a {
+    color: #4f4f4f;
+    text-decoration: none;
+}
+
+.gallary .gallary-right {
+    position: relative;
+}
+
+.gallary .gallary-right img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallary .gallary-right .layer-right {
+    position: absolute;
+    top: 130px;
+    right: -60px;
+    width: 350px;
+    height: 300px;
+}
+
+
+/************************ Services Section ***********************/
+
+.services {
+    width: 100%;
+    height: 800px;
+    background: url(../images/services/back1.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 160px 0 180px;
+    text-align: center;
+}
+
+.services h2 {
+    font-family: "extra-bold";
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.services .service-top-p {
+    font-family: "light";
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 0.7;
+    margin-bottom: 70px;
+}
+
+.services a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.services a .service {
+    width: 220px;
+    height: 220px;
+    background-color: rgba(39, 39, 39, 0.5);
+    padding: 50px 20px;
+    transition: all 0.4s ease-in-out;
+    margin: 0px auto;
+}
+
+.services a:hover .service {
+    background-color: #9ec050;
+}
+
+.services a .service img {
+    margin-bottom: 30px;
+}
+
+.services a .service p {
+    text-transform: uppercase;
+    font-family: "semibold";
+    font-size: 14px;
+}
+
+
+/************************ Our Works Section ***********************/
+
+.our-works {
+    padding-top: 150px;
+    margin-bottom: 120px;
+}
+
+.our-works .our-works-head {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-family: "light";
+    font-size: 48px;
+}
+
+.our-works .our-works-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.our-works .our-works-row .work-image {
+    background-size: cover;
+    height: 300px;
+    /* change height in xlarge to 600px*/
+    width: auto;
+    position: relative;
+    margin-right: 5px;
+}
+
+.our-works .our-works-row .one,
+.our-works .our-works-row .six,
+.our-works .our-works-row .seven {
+    flex-grow: 3;
+}
+
+.our-works .our-works-row .two,
+.our-works .our-works-row .three,
+.our-works .our-works-row .four,
+.our-works .our-works-row .five,
+.our-works .our-works-row .eight,
+.our-works .our-works-row .nine {
+    flex-grow: 2;
+}
+
+.our-works .our-works-row .one {
+    background: url(../images/ourworkes/01.png) no-repeat center center;
+}
+
+.our-works .our-works-row .two {
+    background: url(../images/ourworkes/02.png) no-repeat center center;
+}
+
+.our-works .our-works-row .three {
+    background: url(../images/ourworkes/03.png) no-repeat center center;
+}
+
+.our-works .our-works-row .four {
+    background: url(../images/ourworkes/04.png) no-repeat center center;
+}
+
+.our-works .our-works-row .five {
+    background: url(../images/ourworkes/05.png) no-repeat center center;
+}
+
+.our-works .our-works-row .six {
+    background: url(../images/ourworkes/06.png) no-repeat center center;
+}
+
+.our-works .our-works-row .seven {
+    background: url(../images/ourworkes/07.png) no-repeat center center;
+}
+
+.our-works .our-works-row .eight {
+    background: url(../images/ourworkes/08.png) no-repeat center center;
+}
+
+.our-works .our-works-row .nine {
+    background: url(../images/ourworkes/09.png) no-repeat center center;
+}
+
+.our-works .our-works-row .work-image a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 100px 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.our-works .our-works-row .work-image:hover a {
+    opacity: 1;
+}
+
+.our-works .our-works-row .work-image a h2 {
+    font-family: "extra-bold";
+    font-size: 35px;
+}
+
+.our-works .our-works-row .work-image a p {
+    font-family: "light";
+    font-size: 16px;
+}
+
+
+/************************ Get In Touch Section ***********************/
+
+.get-in-touch {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 130px;
+    margin-top: 120px;
+}
+
+.get-in-touch .map {
+    width: 400px;
+}
+
+.get-in-touch .map img {
+    width: 400px;
+    height: 350px;
+}
+
+.get-in-touch .info {
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px 0;
+    width: 610px;
+    border-right: 3px solid #9ec050;
+}
+
+.get-in-touch .info h2 {
+    font-family: "extra-bold";
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.get-in-touch .info .my-form input {
+    background-color: #292929;
+    border: 1px solid #343334;
+    outline: 0;
+    width: 47%;
+    height: 40px;
+    margin-right: 5%;
+    text-indent: 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.get-in-touch .info .my-form input:last-child {
+    margin-right: 0;
+}
+
+.get-in-touch .info .my-form textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+    line-height: 1.7;
+    background-color: #292929;
+    border: 1px solid #343334;
+    outline: 0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.get-in-touch .info .my-form input:hover,
+.get-in-touch .info .my-form textarea:hover {
+    border: 1px solid #9ec050;
+}
+
+.get-in-touch .info .my-form button {
+    width: 120px;
+    height: 40px;
+    background-color: #9ec050;
+    outline: 0;
+    border: 1px solid #9ec050;
+    text-transform: uppercase;
+    font-family: "bold";
+    font-size: 14px;
+}
+
+.get-in-touch .info .my-form input::placeholder,
+.get-in-touch .info .my-form textarea::placeholder {
+    font-family: "italic";
+    font-size: 14px;
+}
+
+
+/************************ Footer Section ***********************/
+
+footer {
+    background-color: #202020;
+    padding: 65px 0;
+}
+
+footer .copyrights {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .copyrights p {
+    font-family: "regular";
+    font-size: 13px;
+    color: #585858;
+    margin-top: 30px;
+}
+
+
+/*==========================================================================
+                                Loading Overlay 
+==========================================================================*/
+
+.loading-overlay {
+    background: #242424;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+}
+
+.loading-overlay img {
+    position: fixed;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*==========================================================================
+                                Scroll Top 
+==========================================================================*/
+
+.scroll-top {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #282828;
+    position: fixed;
+    right: 65px;
+    bottom: 65px;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+}
