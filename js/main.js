@@ -21,11 +21,6 @@ scrollButton.click(function() {
 
 $(document).ready(function() {
 
-    // Menue Toggle Down
-    $(".menu").hover(function() {
-        $(".menu ul").toggleClass("display");
-        $(".menu ul").fadeToggle(600);
-    });
 
     // Main Page Slider    
     $('.owl-carousel').owlCarousel({
@@ -51,10 +46,19 @@ $(document).ready(function() {
         }
     })
 
+    // Menue Toggle Down
+    $(".menu").hover(function() {
+        $(".menu ul").toggleClass("display");
+        $(".menu ul").fadeToggle(600);
+    });
+
+    $(".search-btn").click(function() {
+        $(".big-hidden-search").slideToggle(600);
+    });
 
     $(".hidden-button").click(function() {
         $(".small-nav").toggleClass("display");
-        $(".small-nav").fadeToggle(1000)
+        $(".small-nav").fadeToggle(600)
     });
 
     /*$("body").click(function() {
@@ -63,6 +67,6 @@ $(document).ready(function() {
 
     $(".small-nav-menu").hover(function() {
         $(".small-nav-menu ul").toggleClass("display");
-        $(".small-nav-menu ul").fadeToggle(1000);
+        $(".small-nav-menu ul").fadeToggle(600);
     });
 });

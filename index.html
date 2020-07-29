@@ -38,7 +38,7 @@
                         <a href="#"><span>about us</span></a>
                     </li>
                     <li class="menu">
-                        <a href="#"><span>our services</span></a>
+                        <a class="menu-link" href="#"><span>our services</span></a>
                         <ul class="list-unstyled">
                             <li><a href="#">Interior Design</a></li>
                             <li><a href="#">Exteroir and Landscape</a></li>
@@ -62,14 +62,16 @@
                 </div>
 
                 <div class="search-lang">
-                    <a href="#">
-                        <ul class=" hidden-button list-unstyled">
-                            <li><span></span></li>
-                            <li><span></span></li>
-                            <li><span></span></li>
-                        </ul>
+                    <a class="hidden-link" href="#">
+                        <i class="hidden-button fas fa-bars fa-lg"></i>
                     </a>
-                    <a class="socail-links" href="#"><i class="fa fa-search"></i></a>
+                    <a class="search-btn socail-links" href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <div class="big-hidden-search">
+                        <input type="text" placeholder="Enter Search Here">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
                     <a class="socail-links" href="#"><span>ع</span></a>
                 </div>
 
@@ -185,7 +187,7 @@
 
     <div class="container">
 
-        <div class="our-works text-center">
+        <div class="our-works ">
 
             <h2 class="our-works-head h1">our works</h2>
 
@@ -310,7 +312,9 @@
                 <img src="images/copyrights/logo.png">
                 <p>
                     Copyright &copy; REEM DESIGN 2018, All rights reserved - Designed & Developed by
-                    <img src="images/copyrights/tasawk.png" alt="Tasawk">
+                    <a href="https://tasawk.com.sa/">
+                        <img src="images/copyrights/tasawk.png" alt="Tasawk">
+                    </a>
                 </p>
             </div>
         </div>
@@ -321,7 +325,6 @@
     <!--------------- Small Screens nav ------------------>
     <div class="small-nav">
         <div class="black-space">
-            <img src="images/pagelogo/logo.png">
 
             <ul class="black-nav-list list-unstyled">
                 <li>

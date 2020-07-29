@@ -86,6 +86,7 @@ header nav .mynav-list .menu ul {
     padding: 10px 20px;
     display: none;
     z-index: 999;
+    transition: all 0.4s ease-in-out;
 }
 
 header nav .mynav-list .menu ul li {
@@ -131,6 +132,7 @@ header nav .social-media a:hover {
 header nav .search-lang {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 header nav .search-lang .socail-links {
@@ -162,6 +164,11 @@ header nav .search-lang .socail-links i {
     margin-top: 5px;
 }
 
+header nav .search-lang .hidden-link {
+    color: #fff;
+    text-decoration: none;
+}
+
 header nav .search-lang .hidden-button {
     width: 15px;
     height: 15px;
@@ -171,16 +178,45 @@ header nav .search-lang .hidden-button {
     transition: all 0.4s ease-in-out;
 }
 
-header nav .search-lang .hidden-button:hover li span {
-    background-color: #9ec050;
+header nav .search-lang .hidden-button:hover {
+    color: #9ec050;
 }
 
-header nav .search-lang .hidden-button li span {
-    display: block;
-    width: 18px;
-    height: 3px;
-    margin-bottom: 3px;
-    background-color: #fff;
+header nav .search-lang .big-hidden-search {
+    position: absolute;
+    right: 51px;
+    top: 45px;
+    width: 300px;
+    height: 100px;
+    background-color: #242424;
+    z-index: 9999;
+    border: 1px solid #343334;
+    text-align: center;
+    padding: 30px 0;
+    display: none;
+    transition: all 0.4s ease-in-out;
+}
+
+header nav .search-lang .big-hidden-search:hover {
+    border: 1px solid #9ec050;
+}
+
+header nav .search-lang .big-hidden-search input {
+    width: calc(100% - 30px);
+    height: 40px;
+    background-color: #292929;
+    border: 1px solid #343334;
+    outline: none;
+    text-indent: 15px;
+}
+
+header nav .search-lang .big-hidden-search button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 40px;
+    right: 20px;
 }
 
 
@@ -376,6 +412,7 @@ header nav .search-lang .hidden-button li span {
     margin-bottom: 50px;
     font-family: "light";
     font-size: 48px;
+    text-align: center;
 }
 
 .our-works .our-works-row {
@@ -391,6 +428,7 @@ header nav .search-lang .hidden-button li span {
     width: auto;
     position: relative;
     margin-right: 5px;
+    text-align: center;
 }
 
 .our-works .our-works-row .one,
@@ -577,6 +615,15 @@ footer .copyrights p {
     margin-top: 30px;
 }
 
+footer .copyrights p a {
+    text-decoration: none;
+    width: 100%;
+}
+
+footer .copyrights p a img {
+    width: auto;
+}
+
 
 /*==========================================================================
                                 Loading Overlay 
@@ -613,7 +660,7 @@ footer .copyrights p {
     background-color: #282828;
     position: fixed;
     right: 65px;
-    bottom: 65px;
+    bottom: 100px;
     z-index: 9999;
     display: none;
     cursor: pointer;

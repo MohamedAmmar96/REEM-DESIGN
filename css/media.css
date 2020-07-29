@@ -14,9 +14,16 @@
         }
         header nav .search-lang .hidden-button {
             display: block;
+            margin-right: 20px;
+        }
+        header nav .search-lang .big-hidden-search {
+            width: 280px;
+            right: 41px;
+            top: 40px;
         }
         header nav .search-lang .socail-links {
             padding: 8px 5px;
+            margin-right: 20px;
         }
         .slider {
             padding: 0px;
@@ -101,9 +108,9 @@
             margin-bottom: 20px;
         }
         .services a .service {
-            width: 150px;
-            height: 150px;
-            padding: 30px 10px;
+            width: 200px;
+            height: 200px;
+            padding: 50px 10px;
             margin: auto;
             margin-bottom: 20px;
         }
@@ -232,17 +239,13 @@
             background-color: #242424;
             z-index: 999999;
         }
-        .small-nav .black-space img {
-            width: 100px;
-            height: 100px;
-        }
         .small-nav .black-space a {
             color: #fff;
             text-decoration: none;
         }
         .small-nav .black-space .black-nav-list {
-            padding: 0 20px;
-            margin: 30px 0px;
+            padding: 0 30px;
+            margin: 50px 0px;
         }
         .small-nav .black-space .black-nav-list li {
             margin-bottom: 10px;
@@ -255,7 +258,7 @@
             color: #9ec050;
         }
         .small-nav .black-space .black-nav-list .small-nav-menu ul {
-            margin-left: 10px;
+            margin-left: 20px;
             margin-top: 5px;
             display: none;
         }
@@ -269,15 +272,24 @@
             color: #9ec050;
         }
         .small-nav .black-space .small-nav-social {
-            padding: 0 20px;
+            padding: 0 30px;
         }
         .small-nav .black-space .small-nav-social a {
             margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+        }
+        .small-nav .black-space .small-nav-social a:hover {
+            color: #9ec050;
         }
     }
     /**************** Extra Small Screens Section1****************/
     
     @media (max-width:500px) {
+        header nav .search-lang .big-hidden-search {
+            width: 230px;
+        }
         .our-works .our-works-row .work-image {
             margin-right: auto;
             margin-left: auto;
@@ -314,10 +326,6 @@
         header nav .social-media {
             display: none;
         }
-        header .logo {
-            width: 150px;
-            height: 100px;
-        }
         header nav {
             padding-right: 0px;
         }
@@ -326,6 +334,10 @@
         }
         header nav .search-lang .socail-links {
             padding: 8px 5px;
+        }
+        header nav .search-lang .big-hidden-search {
+            right: 41px;
+            top: 40px;
         }
         .slider {
             padding: 0px;
@@ -346,8 +358,8 @@
         .owl-carousel .owl-nav .owl-next {
             position: absolute;
             top: 45%;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
             outline: 0;
             margin: 0px;
         }
@@ -359,7 +371,8 @@
         }
         .owl-carousel .owl-nav .owl-prev i,
         .owl-carousel .owl-nav .owl-next i {
-            line-height: 20px;
+            line-height: 40px;
+            text-align: center;
         }
         .gallary .gallary-left {
             margin-left: 30px;
@@ -378,7 +391,6 @@
         .gallary .gallary-left .gallary-img .layer-left {
             width: 100px;
             height: 100px;
-            left: 0px;
             top: 20px;
             left: 36%;
         }
@@ -416,9 +428,9 @@
             margin-bottom: 20px;
         }
         .services a .service {
-            width: 150px;
-            height: 150px;
-            padding: 30px 10px;
+            width: 200px;
+            height: 200px;
+            padding: 50px 10px;
             margin: auto;
             margin-bottom: 20px;
         }
@@ -542,22 +554,18 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 240px;
+            width: 300px;
             height: 100%;
             background-color: #242424;
             z-index: 999999;
-        }
-        .small-nav .black-space img {
-            width: 100px;
-            height: 100px;
         }
         .small-nav .black-space a {
             color: #fff;
             text-decoration: none;
         }
         .small-nav .black-space .black-nav-list {
-            padding: 0 20px;
-            margin: 30px 0px;
+            padding: 0 50px;
+            margin: 50px 0px;
         }
         .small-nav .black-space .black-nav-list li {
             margin-bottom: 10px;
@@ -570,7 +578,7 @@
             color: #9ec050;
         }
         .small-nav .black-space .black-nav-list .small-nav-menu ul {
-            margin-left: 10px;
+            margin-left: 20px;
             margin-top: 5px;
             display: none;
         }
@@ -584,10 +592,16 @@
             color: #9ec050;
         }
         .small-nav .black-space .small-nav-social {
-            padding: 0 20px;
+            padding: 0 50px;
         }
         .small-nav .black-space .small-nav-social a {
             margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+        }
+        .small-nav .black-space .small-nav-social a:hover {
+            color: #9ec050;
         }
     }
     /*********************  Medium Screens ********************/
