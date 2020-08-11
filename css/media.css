@@ -226,7 +226,7 @@
             height: 400px;
             background-color: rgba(39, 39, 39, 0.9);
             border-radius: 35px;
-            box-shadow: 5px 5px 10px #b2ce72, -5px -5px 10px #b2ce72;
+            box-shadow: 5px 5px 10px #b4c786, -5px -5px 10px #b4c786;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -267,11 +267,7 @@
             height: 100%;
             padding-top: 50px;
             font-size: 16px;
-            display: none;
             font-family: "bold";
-        }
-        .our-works .our-works-row .work-image:hover .click-me {
-            display: block;
         }
         /*********** End Of Hidden Work ***********/
         .get-in-touch {
@@ -575,7 +571,7 @@
             height: 300px;
             background-color: rgba(39, 39, 39, 0.9);
             border-radius: 35px;
-            box-shadow: 5px 5px 10px #b2ce72, -5px -5px 10px #b2ce72;
+            box-shadow: 5px 5px 10px #b4c786, -5px -5px 10px #b4c786;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -615,11 +611,7 @@
             height: 100%;
             padding-top: 27px;
             font-size: 13px;
-            display: none;
             font-family: "bold";
-        }
-        .our-works .our-works-row .work-image:hover .click-me {
-            display: block;
         }
         /*********** End Of Hidden Work ***********/
         .get-in-touch .map {
@@ -745,16 +737,13 @@
             display: flex;
             flex-direction: row;
         }
-        .gallary .left-div {
-            order: 2;
-        }
         .gallary .gallary-left {
             text-align: left;
             margin-left: auto;
             margin-right: auto;
         }
         .gallary .gallary-left .gallary-img {
-            width: 270px;
+            width: 300px;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 15px;
@@ -766,7 +755,7 @@
         }
         .gallary .gallary-left p {
             font-size: 14px;
-            width: 270px;
+            width: 300px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -779,11 +768,10 @@
             text-align: center;
             order: 1;
             margin-bottom: 50px;
-            margin-top: 20px;
         }
         .gallary .gallary-right img {
-            width: 320px;
-            height: 320px;
+            width: 350px;
+            height: 350px;
         }
         .services {
             padding: 60px 0 100px;
@@ -895,7 +883,7 @@
             height: 550px;
             background-color: rgba(39, 39, 39, 0.9);
             border-radius: 35px;
-            box-shadow: 5px 5px 10px #b2ce72, -5px -5px 10px #b2ce72;
+            box-shadow: 5px 5px 10px #b4c786, -5px -5px 10px #b4c786;
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
@@ -937,11 +925,7 @@
             height: 100%;
             padding-top: 70px;
             font-size: 20px;
-            display: none;
             font-family: "bold";
-        }
-        .our-works .our-works-row .work-image:hover .click-me {
-            display: block;
         }
         /*********** End Of Hidden Work ***********/
         .get-in-touch {
@@ -1237,7 +1221,7 @@
     }
     /*********************  Large Screens *********************/
     
-    @media (min-width:1200px) and (max-width:1489px) {
+    @media (min-width:1200px) and (max-width:1849px) {
         .container {
             width: 1040px;
             padding-right: 15px;
@@ -1261,7 +1245,7 @@
     }
     /********************* Extra Large Screens *********************/
     
-    @media (min-width:1490px) {
+    @media (min-width:1850px) {
         .container-fluid {
             width: 1730px;
             padding-left: 15px;
@@ -1342,6 +1326,9 @@
         }
         .services a:hover .service {
             background-color: #9ec050;
+        }
+        .services a .service p {
+            font-size: 16px;
         }
         .our-works .our-works-row {
             margin-bottom: 2px;
